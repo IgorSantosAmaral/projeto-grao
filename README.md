@@ -23,4 +23,6 @@ Este projeto foi desenvolvido utilizando React e Styled Components para aprimora
 
 Este projeto serve como um estudo prático sobre desenvolvimento frontend moderno, aplicando boas práticas de código e organização. 🚀  
 
-## 📌
+## 📌 Preview
+
+![projetograo](https://github.com/user-attachments/assets/59474673-f589-4cfb-8051-96adbd4534e6)
