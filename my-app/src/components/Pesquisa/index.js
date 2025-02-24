@@ -57,7 +57,7 @@ function Pesquisa() {
                 placeholder="Escreva o nome do produto que deseja"
                 onBlur={evento => {
                     const textoDigitado = evento.target.value
-                    const resultadoPesquisa = graos.filter(grao => grao.nome.includes(textoDigitado))
+                    const resultadoPesquisa = graos.filter(grao => grao.nome.toLowerCase().includes(textoDigitado.toLowerCase()))
                     setGraosPesquisados(resultadoPesquisa)
                 }}
             />
