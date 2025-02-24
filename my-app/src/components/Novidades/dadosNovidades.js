@@ -1,8 +1,11 @@
-import grao from '../../imgs/cafe.jpg'
+import cafe from '../../imgs/cafe.jpg'
+import soja from '../../imgs/soja.jpg'
+import milho from '../../imgs/milho.jpg'
+import sorgo from '../../imgs/sorgo.jpg'
 
 export const graos = [
-    {nome: "Grao de Café", src:grao, id: 1},
-    {nome: "Grao de Soja", src:grao, id: 2},
-    {nome: "Grao de Milho", src:grao, id: 3},
-    {nome: "Grao de Sorgo", src:grao, id: 4},
+    {nome: "Grao de Café", src:cafe, id: 1},
+    {nome: "Grao de Soja", src:soja, id: 2},
+    {nome: "Grao de Milho", src:milho, id: 3},
+    {nome: "Grao de Sorgo", src:sorgo, id: 4},
 ]

@@ -1,7 +1,8 @@
 import { graos } from './dadosNovidades';
 import { Titulo } from '../Titulo';
 import CardRecomenda from '../CardRecomenda';
-import imagemGrao from '../../imgs/soja.jpg'
+import imagemSoja from '../../imgs/soja.jpg'
+import imagemSorgo from '../../imgs/sorgo.jpg'
 import styled from 'styled-components';
 
 const NovidadesContainer = styled.section`
@@ -19,7 +20,11 @@ const NovosGraosContainer = styled.div`
     gap: 50px;
     width: 100%;
     justify-content: center;
-    cursor: pointer;
+
+    img {
+        width: 800px;
+        cursor: pointer;
+    }
 `
 
 function Novidades() {
@@ -40,13 +45,13 @@ function Novidades() {
                 titulo="Talvez você se interesse por..."
                 subtitulo="Soja"
                 descricao="A soja é um grão versátil e nutritivo que tem grande potencial para o mercado, seja para a produção de alimentos, biocombustíveis, ou para a criação animal."
-                img={imagemGrao}
+                img={imagemSoja}
             />
             <CardRecomenda
                 titulo="Talvez você se interesse por..."
                 subtitulo="Sorgo"
                 descricao="O sorgo é um cereal que tem vários benefícios para o mercado, como ser uma fonte de energia para animais, matéria-prima para etanol e ser uma cultura de baixo custo."
-                img={imagemGrao}
+                img={imagemSorgo}
             />
         </NovidadesContainer>
     )
