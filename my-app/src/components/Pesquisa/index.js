@@ -62,11 +62,15 @@ function Pesquisa() {
             <Titulo>Está em busca de qualidade?</Titulo>
             <Subtitulo>Escolha o que deseja em nosso site.</Subtitulo>
             <Input
-                placeholder="Escreva o nome do produto que deseja"
-                onBlur={evento => {
-                    const textoDigitado = evento.target.value
-                    const resultadoPesquisa = graos.filter(grao => grao.nome.toLowerCase().includes(textoDigitado.toLowerCase()))
-                    setGraosPesquisados(resultadoPesquisa)
+                placeholder="O que deseja?  ( Ex.: Grao de Milho, ... )"
+                onChange={evento => {
+                    const textoDigitado = evento.target.value.trim()
+                    if (textoDigitado === "") {
+                        setGraosPesquisados([]);
+                    } else {
+                        const resultadoPesquisa = graos.filter(grao => grao.nome.toLowerCase().includes(textoDigitado.toLowerCase()));
+                        setGraosPesquisados(resultadoPesquisa);
+                    }
                 }}
             />
             <ResultadoContainer>
