@@ -8,7 +8,7 @@ const PesquisaContainer = styled.section`
     color: #FFF;
     text-align: center;
     padding: 85px 0;
-    height: 270px;
+    min-height: 270px;
     width: 100%;
 `
 
@@ -25,11 +25,19 @@ const Subtitulo = styled.h3`
     margin-bottom: 40px;
 `
 
+const ResultadoContainer = styled.div`
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 40px;
+    gap: 80px;
+`
+
 const Resultado = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
     cursor: pointer;
 
     p {
@@ -61,12 +69,14 @@ function Pesquisa() {
                     setGraosPesquisados(resultadoPesquisa)
                 }}
             />
-            { graosPesquisados.map( grao => (
-                <Resultado>
-                    <img src={grao.src}/>
-                    <p>{ grao.nome }</p>
-                </Resultado>
-            )) }
+            <ResultadoContainer>
+                { graosPesquisados.map( grao => (
+                    <Resultado>
+                        <img src={grao.src}/>
+                        <p>{ grao.nome }</p>
+                    </Resultado>
+                )) }
+            </ResultadoContainer>
         </PesquisaContainer>
     )
 }

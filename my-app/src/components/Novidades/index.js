@@ -6,7 +6,7 @@ import imagemSorgo from '../../imgs/sorgo.jpg'
 import styled from 'styled-components';
 
 const NovidadesContainer = styled.section`
-    background-color: #EBECEE;
+    background-image: linear-gradient(90deg,rgb(82, 44, 0) 35%,rgb(137, 96, 50) 165%);
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
