@@ -10,6 +10,14 @@ const PesquisaContainer = styled.section`
     padding: 85px 0;
     min-height: 270px;
     width: 100%;
+
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 40px 0;
+    }
 `
 
 const Titulo = styled.h2`
@@ -31,6 +39,14 @@ const ResultadoContainer = styled.div`
     justify-content: center;
     margin: 40px;
     gap: 80px;
+
+    @media (max-width: 768px) {
+        gap: 40px;
+    }
+
+    @media (max-width: 480px) {
+        gap: 20px;
+    }
 `
 
 const Resultado = styled.div`
@@ -51,6 +67,26 @@ const Resultado = styled.div`
     &:hover {
         border: 1px solid white;
     }  
+
+    @media (max-width: 768px) {
+        img {
+            width: 200px;
+        }
+
+        p {
+            width: 150px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        img {
+            width: 150px;
+        }
+
+        p {
+            width: 100px;
+        }
+    }
 `
 
 function Pesquisa() {

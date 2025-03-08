@@ -8,4 +8,12 @@ export const Titulo = styled.h2`
     font-size: ${props => props.tamanhoFonte || '18px;'};
     text-align: ${props => props.alinhamento || 'center'};
     margin: 0;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 20px;
+    }
 `

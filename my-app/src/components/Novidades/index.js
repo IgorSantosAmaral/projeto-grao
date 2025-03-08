@@ -11,6 +11,10 @@ const NovidadesContainer = styled.section`
     display: flex;
     flex-direction: column;
 
+    @media (max-width: 768px) {
+        padding: 15px;
+    }
+
 `
 
 const NovosGraosContainer = styled.div`
@@ -24,6 +28,16 @@ const NovosGraosContainer = styled.div`
     img {
         width: 800px;
         cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        gap: 20px;
     }
 `
 

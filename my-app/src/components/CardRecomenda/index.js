@@ -8,10 +8,20 @@ const Card = styled.div`
     border-radius: 10px;
     display: flex;
     margin: 40px auto;
-    max-width: 600px;
+    width: 600px;
     padding: 25px 20px;
     justify-content: space-around;
-    width: 100%;  
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 15px;
+        max-width: 400px;
+    }
+
+    @media (max-width: 480px) {
+        margin: 20px auto;
+        padding: 10px;
+    }
 `
 
 const Botao = styled.button`

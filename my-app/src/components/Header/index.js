@@ -7,6 +7,15 @@ const HeaderContainer = styled.header`
     background-color: #FFF;
     display: flex;
     justify-content: space-around;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: 480px) {
+        padding: 10px;
+    }
 `
 
 function Header() {
