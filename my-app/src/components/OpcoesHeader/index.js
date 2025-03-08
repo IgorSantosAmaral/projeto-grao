@@ -16,7 +16,7 @@ const Opcao = styled.li`
     min-width: 120px;
 `
 
-const textoOpcoes = ['GRÃOS', 'FAVORITOS', 'COMPRAR'];
+const textoOpcoes = ['GRÃOS', 'FAVORITOS', 'FALE CONOSCO'];
 
 function OpcoesHeader() {
     return (
