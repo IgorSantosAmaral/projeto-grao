@@ -53,7 +53,7 @@ function CardRecomenda({titulo, subtitulo, descricao, img}) {
                 <Descricao>{descricao}</Descricao>
             </div>
             <div>
-                <ImgGrao src={img}/>
+                <ImgGrao src={img} alt={`Imagem de ${titulo}`}/>
                 <Botao>Saiba mais</Botao>
             </div>
         </Card>
