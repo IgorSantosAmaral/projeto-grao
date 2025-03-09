@@ -25,4 +25,6 @@ Este projeto serve como um estudo prático sobre desenvolvimento frontend modern
 
 ## 📌 Preview
 
-![projetograo](https://github.com/user-attachments/assets/59474673-f589-4cfb-8051-96adbd4534e6)
+Este preview apresenta uma única imagem composta por duas visualizações: uma exibindo a versão no navegador e a outra demonstrando a responsividade.
+
+![projetograopreview](https://github.com/user-attachments/assets/9b8680d5-6d95-4054-ae15-55d908dfe668)
